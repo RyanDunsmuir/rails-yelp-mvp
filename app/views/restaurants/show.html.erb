@@ -1,0 +1,30 @@
+<div class="restaurant-page-card">
+  <h1 class="mt-4 mb-4"><%= @restaurant.name %></h1>
+  <div class="food-image">
+    <img src="https://source.unsplash.com/user/foodess" alt="">
+  </div>
+  <div class="infos">
+    <h2><%= @restaurant.category %></h2>
+    <h3><%= @restaurant.address %></h3>
+    <h3><%= @restaurant.phone_number %></h3>
+  </div>
+  <div class="bottom-buttons">
+    <%= link_to 'Back', restaurants_path, class: "btn btn-warning m-2"%>
+    <%= link_to 'Add Review', new_restaurant_review_path(@restaurant), class: "btn btn-primary m-2" %>
+  </div>
+    <div class="review-cards">
+    <% @restaurant.reviews.each do |review| %>
+      <div class="review-card">
+        <div class="stars">
+          <p><%= '⭐️' * review.rating %></p>
+        </div>
+        <div class="content">
+          <p><%= review.content %></p>
+        </div>
+      </div>
+    <% end %>
+  </div>
+</div>
+
+
+

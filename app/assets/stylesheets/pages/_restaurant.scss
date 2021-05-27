@@ -1,0 +1,73 @@
+
+.restaurant-page-card {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: white;
+  box-shadow: 1px 1px 10px grey;
+  padding: 20px;
+  margin-top: 30px;
+}
+
+.food-image {
+  width: 100%;
+}
+
+.food-image img {
+  height: 400px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.infos {
+  display: flex;
+  width: 100%;
+  padding: 20px 10px;
+  justify-content: space-between;
+}
+
+.bottom-buttons {
+  display: flex;
+  justify-content: flex-end;
+  justify-self: flex-end;
+}
+
+.bottom-buttons a {
+  color: white;
+  font-weight: bold;
+}
+
+.review-cards {
+  display: flex;
+  border-radius: 10px;
+  padding: 5px;
+}
+
+.review-card {
+  background-color: white;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border: 1px solid rgb(200,200,200);
+  border-radius: 10px;
+  margin: 0px 10px;
+}
+
+.stars {
+  display: flex;
+  margin-right: 10px;
+  justify-content: center;
+
+}
+
+.stars p {
+  margin-bottom: 0px;
+}
+
+.content {
+
+}
+
+.content p {
+  margin-bottom: 0px;
+}
+
